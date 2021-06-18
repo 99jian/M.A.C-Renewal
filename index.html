@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>M.A.C</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 홈화면 추가시 아이콘표시 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <!-- common css-->
+    <link rel="stylesheet" href="common/css/common1.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="maincss/main.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- hover 애니메이션 css-->
+    <link rel="stylesheet" href="maincss/ihover.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <!--common js -->
+    <script src="common/js/common1.js"></script>
+    <!-- main js -->
+    <script src="mainjs/main.js"></script>
+    <!--top btn js -->
+    <script src="common/js/easing.js"></script>
+    <script src="common/js/topbtn.js"></script>
+    <!-- swiper slide css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper slide js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- map js -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=db617ae5f0a13b98b77c9c489d364ca9"></script>
+    <!-- 팝업(모달)창 js -->
+    <script src="mainjs/mainpopup.js"></script>
+</head>
+
+<body>
+    <div id="skip_nav">
+        <a href="#gnb">네비게이션 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <span class="top_btn">
+        <a href="javascript:void(0)"><img src="common/imgs/btn.png" alt="top_btn"></a>
+    </span>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <h1 id="logo"><a href="index.html"><img src="common/imgs/logo.png" alt="로고이미지"></a></h1>
+                <nav id="gnb">
+                    <ul class="main_menu">
+                        <li><a href="sub1/sub1.html" class="depth m1">NEW</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">보태닉 패닉 컬렉션</a></li>
+                                <li><a href="#">Sun kissed Summer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub2/sub2.html" class="depth m2">BEST</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">립 TOP 20</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub3/sub3.html" class="depth m3">FACE</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">립</a></li>
+                                <li><a href="#">페이스</a></li>
+                                <li><a href="#">아이</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub4/sub4.html" class="depth m4">브러쉬</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Pro</a></li>
+                                <li><a href="#">Classic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_icon">
+                    <form action="">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <!-- <span class="material-icons search_icon"><a href="#">search</a></span> -->
+                    </form>
+                </div>
+            </div>
+            <div class="menu_box"></div>
+        </header>
+        <div id="visual">
+            <h2 class="hidden">콘텐츠 영역</h2>
+            <video type="video/mp4" src="video/cruella.mp4" autoplay muted loop></video>
+        </div>
+        <section id="container">
+            <article class="new_item">
+                <h3>Must - have for me</h3>
+                <p>The collection of Disney keuruella by <br>M.A.C</p>
+                <h4>펑크 록 레드와 오뜨 메탈릭 컬러를 재해석한 립컬러와 <br>아이섀도우 제품은 선명한 레드 립과 강렬한 아이메이크업으로<br> 분한
+                    디즈니 무비 속 크루엘라의 아이코닉한 룩을 떠올리게 합니다.<br>
+                    모든 패키지는 크루엘라의 반항적 애티튜드의 상징,<br> 블랙과 화이트의 투톤 패션을 상징하는 스페셜 패키지로 만나볼 수 있습니다.</h4>
+                <ul>
+                    <li>
+                        <div class="ih-item circle effect13 top_to_bottom"><a href="#">
+                            <div class="img"><img src="imgs/rip.png" alt="크루엘라 컬렉션 전제품 이미지"></div>
+                            <div class="info">
+                              <h3>Cruella</h3>
+                              <p>The collection of Disney keuruella by Mac</p>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect13 bottom_to_top"><a href="#">
+                            <div class="img"><img src="imgs/rip03.png" alt="홀리데이 컬렉션 전제품이미지"></div>
+                            <div class="info">
+                              <h3>Gold</h3>
+                              <p>Holiday Collection</p>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect13 top_to_bottom"><a href="#">
+                            <div class="img"><img src="imgs/rip02.png" alt="여름한정 립 이미지"></div>
+                            <div class="info">
+                              <h3>Powder Kiss</h3>
+                              <p>Sun kissed Summer</p>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect13 bottom_to_top"><a href="#">
+                            <div class="img"><img src="imgs/risa.png" alt="앰배서더 리사 모델이미지"></div>
+                            <div class="info">
+                              <h3>Risa</h3>
+                              <p>Blackpink Lisa M.A.C Ambassador</p>
+                            </div></a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article class="best_item swiper-container mySwiper">
+                <h3>Best Seller</h3>
+                <p>M.A.C one TOP</p>
+                <h4>가볍고 편안한 텍스처, 매트 피니쉬, 입술 라인 흐리게 연출하는<br><b>POWDER KISS LIPSTICK</b></h4>
+                <h4>강한 지속력, 강한 발색, 편안하며 지속력이 뛰어난 포뮬러<br><b>VERSICOLOUR VARNISH CREAM LIP STAIN</b></h4>
+                <h4><b>┌───────────────────────────────────────────┐</b></h4>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide.png" alt="젤네일 이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide02.png" alt="입술이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide03.png" alt="립스틱 하단이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide04.png" alt="붓과 입술 이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide05.png" alt="여름한정 립 이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide06.png" alt="크루셀라 한정판 브러쉬 이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide07.png" alt="크루셀라 파우더블러셔 이미지"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/slide08.png" alt="리사 모델이미지"></a></li>
+                </ul>
+                <h4><b>└───────────────────────────────────────────┘</b></h4>
+            </article>
+            <article class="face_item">
+                <a href=""><img src="imgs/cru.png" alt="크루엘라컬렉션홍보이미지"></a>
+                <h3>Face Item</h3>
+                <p>LIGHTFUL-C<br>Collection</p>
+                <h4>무겁거나 두껍지 않은 제형으로<br>피부를 더욱 투명하고 촉촉하게 가꿔주고<br>가볍게 마무리되는 쿠션 컴팩트</h4>
+                <ul>
+                    <li>
+                        <div class="ih-item circle effect20 top_to_bottom"><a href="https://www.instagram.com/p/CLY9hKHg1R8/?utm_source=ig_web_copy_link">
+                            <div class="img"><img src="imgs/face.png" alt="리사라이트풀 화보이미지"></div>
+                            <div class="info">
+                              <div class="info-back">
+                                <h3>LIGHTFUL-C</h3>
+                                <p>Description goes here</p>
+                              </div>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect20 bottom_to_top"><a href="https://www.instagram.com/p/CLYWI1Tl5CH/?utm_source=ig_web_copy_link">
+                            <div class="img"><img src="imgs/face02.png" alt="라이트풀사용법 첫번째 이미지"></div>
+                            <div class="info">
+                              <div class="info-back">
+                                <h3>STEP 1</h3>
+                                <p>적정량을 얼굴에 올려주세요</p>
+                              </div>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect20 top_to_bottom"><a href="https://www.instagram.com/p/CLYWI1Tl5CH/?utm_source=ig_web_copy_link">
+                            <div class="img"><img src="imgs/face03.png" alt="라이트풀 사용법 두번째 이미지"></div>
+                            <div class="info">
+                              <div class="info-back">
+                                <h3>STEP 2</h3>
+                                <p>퍼프로 톡 톡 눌러주세요</p>
+                              </div>
+                            </div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ih-item circle effect20 bottom_to_top"><a href="https://www.instagram.com/p/CLY3N3HMbCL/?utm_source=ig_web_copy_link">
+                            <div class="img"><img src="imgs/face04.png" alt="라이트풀 파우더 이미지"></div>
+                            <div class="info">
+                              <div class="info-back">
+                                <h3>purchase</h3>
+                                <p>구매하기</p>
+                              </div>
+                            </div></a>
+                        </div>
+                    </li>
+                </ul>
+                
+            </article>
+            <img src="imgs/face_bgi02.png" alt="리사 벚꽃배경 라이트풀화보이미지 ">
+        </section>
+        <section id="more">
+            <article class="event_box">
+                <div class="event">
+                    <a href="#"><img src="imgs/ev.png" alt="리사 립 및 피부제품홍보이미지"></a>
+                </div>
+            </article>
+            <article class="store">
+                <h3>매장 찾기</h3>
+                <div id="map"></div>
+            </article>
+            <article class="sns">
+                <h3>sns</h3>
+                <p>M.A.C for me</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/p/CMTRbaQrPNr/?utm_source=ig_web_copy_link">로즈 톤업 스프링메이크업 인스타그램이미지</a></li>
+                    <li><a href="https://www.instagram.com/p/CNWptygl5RR/?utm_source=ig_web_copy_link">러브미리퀴드 립컬러 인스타그램이미지</a></li>
+                    <li><a href="https://www.instagram.com/p/CO_zCv-lV4D/?utm_source=ig_web_copy_link">크루엘라컬렉션 한정판 인스타그램이미지</a></li>
+                    <li><a href="https://www.instagram.com/p/CPzz4yxlxJM/?utm_source=ig_web_copy_link">보태닉 패닉컬렉션 인스타그램이미지</a></li>
+                    <li><a href="https://www.instagram.com/p/CP5TVFlFirl/?utm_source=ig_web_copy_link">마라캐쉬미어 인스타그램이미지</a></li>
+                    <li><a href="https://www.instagram.com/p/CP60KhelASb/?utm_source=ig_web_copy_link">리사 파우더키스리퀴드 인스타그램이미지</a></li>
+                </ul>
+            </article>
+        </section>
+        <!--footer-->
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <span class="footer_logo_icon">
+                            <a href="index.html"><img src="common/imgs/logo.png" alt="푸터로고이미지"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_center">
+                    <ul class="footer_menu">
+                        <li><a href="#">M.A.C Store</a></li>
+                        <li><a href="#">고객관리지원팀</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">내정보 및 주문관리</a></li>
+                        <li><a href="#">주변매장찾기</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <address>
+                        이엘씨에이한국(유) 대표 SLAVIN PAULㅣ서울시 강남구 강남대로382 메리츠타워, 06232 
+                    </address>
+                    <p>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.<br>
+                        통신판매업신고번호: 강남-15737호｜사업자정보조회｜고객관리지원팀: 02-6971-3291 CONSUMERCARE@KR.MACCOSMETICS.COM｜
+                        호스팅서비스 사업자: ㈜엘지유플러스
+                    </p>
+                </div>
+                <div class="footer_right"></div>
+            </div>
+        </footer>
+    </div>
+    <!-- 팝업(모달)창 -->
+    <div id="showimage" style="position: absolute;top: 200px;left: 100px;width: 322px;height: 322px; z-index: 110;">
+       <div class="pop_img">
+           <img src="popup/popup.png" alt="상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <form action="" style="font-size: 12px;text-align: center;color: #fff;">
+            <input type="checkbox" id="Notice" name="Notice" title="오늘은 이창을 열지 않음 선택상자">
+            <label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closewin();hidebox();return false;" style="color: #fff;">[close]</a>
+        </form>
+        <script>
+            /* swiper slide */
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+            
+            /* pop up */
+            let testFunction = function() {
+                alert("테스트");
+            }
+
+
+            let popupImgTag = $('#showimage');
+
+
+            popupImgTag.click(testFunction);
+
+            /* map */
+            var container = document.getElementById('map');
+		    var options = {
+			    center: new kakao.maps.LatLng(37.5045797001628, 127.00411325350753),
+			    level: 3
+		    };
+
+		    var map = new kakao.maps.Map(container, options);
+
+            /* 좌표설정 map */
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.54569505842537, 126.97984621303176), // 지도의 중심좌표
+        level: 7 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+ 
+// 버튼을 클릭하면 아래 배열의 좌표들이 모두 보이게 지도 범위를 재설정합니다 
+var points = [
+    new kakao.maps.LatLng(37.52849695255059, 127.03929291605549),
+    new kakao.maps.LatLng(37.528313619394275, 127.0271898988899),
+    new kakao.maps.LatLng(37.56620705510929, 126.98158636903167),
+    new kakao.maps.LatLng(37.52989424339647, 126.96456453515545),
+    new kakao.maps.LatLng(37.55614408478562, 126.93576299806628),
+    new kakao.maps.LatLng(37.56094019827482, 126.98103858756669),
+    new kakao.maps.LatLng(37.52045805187652, 126.90713877402648),
+    new kakao.maps.LatLng(37.55503321748491, 126.9229782656338),
+    new kakao.maps.LatLng(37.52906806131337, 126.874747903331),
+];
+
+// 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
+var bounds = new kakao.maps.LatLngBounds();    
+
+var i, marker;
+for (i = 0; i < points.length; i++) {
+    // 배열의 좌표들이 잘 보이게 마커를 지도에 추가합니다
+    marker =     new kakao.maps.Marker({ position : points[i] });
+    marker.setMap(map);
+    
+    // LatLngBounds 객체에 좌표를 추가합니다
+    bounds.extend(points[i]);
+}
+
+function setBounds() {
+    // LatLngBounds 객체에 추가된 좌표들을 기준으로 지도의 범위를 재설정합니다
+    // 이때 지도의 중심좌표와 레벨이 변경될 수 있습니다
+    map.setBounds(bounds);
+}
+        </script>
+    </div>
+</body>
+
+</html>

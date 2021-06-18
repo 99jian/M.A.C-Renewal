@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#gnb").hover(
+   function(){
+        $('.sub_menu').stop().fadeIn('slow');
+        $(".menu_box").stop().slideDown();
+    },
+    function(){
+        $('.sub_menu').stop().fadeOut('slow')
+        $(".menu_box").stop().slideUp();
+    });
+});
